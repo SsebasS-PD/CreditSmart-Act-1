@@ -1,0 +1,143 @@
+a {
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    background-color: #95b8d1;
+    padding: 8px 15px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #d6eadf;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.logo img {
+
+    height: 60px;
+    margin-right: 10px;
+}
+
+.menu{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #237be2;
+}
+
+nav a{
+    width: 170px;
+    font-weight: 600;
+    padding-right: 10px;
+    text-align: center;
+    background-color: #237be2;
+    color: #fff;
+    margin-left: 5px;
+} 
+
+nav a:hover{
+    color: gainsboro;
+}
+
+.titulo{
+    text-decoration: underline;
+    margin-left: 18px;
+}
+
+.subTitulo {
+    animation-name: texto-cambiante;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+article{
+    border: 5px solid #237be2;
+    width: 320px;
+    margin: 25px;
+    border-radius: 15px;
+    float: left;
+}
+
+@keyframes texto-cambiante {
+  25% { color: #3fbc71; }
+  50% { color: #000; }
+  75% { color: #3fbc71; }
+  100% { color: #000; }
+}
+
+.textoCabecera {
+    margin-top: 5px;
+    font-weight: 900;
+    text-align: center;
+}
+.todoProductos .imagen {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.todoProductos article{
+    text-align: center;
+    padding: 50px;
+}
+
+.todoProductos a{
+    display: inline-block;
+    width: 170px;
+    padding: 12px !important;
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #237be2;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+p {
+    font-weight: 700;
+}
+
+/*responsive*/
+@media(max-width:850px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.footer {
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #444;
+  background-color: #d6eadf;
+}

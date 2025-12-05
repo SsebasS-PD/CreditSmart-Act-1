@@ -1,0 +1,95 @@
+.info{
+    margin: 20px;
+    padding: 10px;
+}
+
+.formulario{
+    justify-content: center;
+    width: 100%;
+}
+
+.containerDC{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.datosCliente{
+    border: 5px solid #237be2;
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+
+.datosCliente h2{
+    text-decoration: underline;
+}
+
+.datosCliente label{
+    text-align: left !important;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.datosCliente input{
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    padding-left: 10px;
+    border-radius: 30px;
+}
+
+#tipoCredito{
+    width: 255px;
+    height: 35px;
+    margin: 5px;
+    padding-left: 15px;
+    border-radius: 30px;
+}
+
+#plazo{
+    width: 255px;
+    height: 35px;
+    margin: 5px;
+    padding-left: 15px;
+    border-radius: 30px; 
+}
+
+#destinoCredito{
+    width: 250px;
+    height: 40px;
+    margin: 5px; 
+}
+
+.botones{
+    right: 10px;  
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.botones button{
+    cursor: pointer;   
+    width: 190px;
+    height: 46px;
+    border: 3px solid blue;
+    border-radius: 40px;
+    background-color: #237be2;
+    color: #fff;
+    font-size: 18px;
+    transition: ease 0.5s;
+}
+
+.botones button:hover{
+    border: 3px solid #237be2;
+    background-color: #fff;
+    color: #237be2;
+}

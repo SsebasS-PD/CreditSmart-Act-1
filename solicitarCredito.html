@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logoPestana.png" type="image/png">
+    <title>Solicita Tu Crédito</title>
+    <link rel="stylesheet" href="estiloSolicitaCredito.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+     <header class="encabezado">
+        <div class="logo">
+            <img src="imagenes/descarga.png" alt="Logotipo CreditSmart">
+        </div>
+    
+    </header>
+    <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="solicitarCredito.html">SOLICITAR CREDITO</a>
+            <a href="simuladorCredito.html">SIMULA TU CREDITO</a>
+    </nav>
+        <h1 class="titulo">Solicita tu Crédito en Línea</h1>
+        <div class="info">
+            <p>Realiza tu solicitud de crédito de manera rápida y sencilla. Solo debes completar los campos del formulario 
+            con tu información personal, laboral y los datos del crédito que deseas solicitar.</p>
+
+            <p>Recuerda que esta información nos permitirá evaluar tu perfil financiero y confirmar si cumples con los 
+            requisitos del producto seleccionado.</p>
+
+            <p>Al finalizar, haz clic en Enviar Solicitud para registrar tu formulario o en Limpiar Formulario si deseas 
+            corregir o volver a empezar.</p>
+        </div>
+        
+
+    <form class="formulario">
+
+        <div class="containerDC">
+          <div class="datosCliente" id="datosPersonales">
+            <h2>Datos Personales</h2>
+            <label for="nombre">Nombre Completo</label><br>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="cedula">Cédula</label><br>
+            <input type="number" id="cedula" name="cedula">
+
+            <label for="email">Emali</label><br>
+            <input type="email" id="email" name="email">
+
+            <label for="tel">Teléfono</label><br>
+            <input type="tel" id="tel" name="tel">
+          </div>
+
+          <div class="datosCliente" id="datosCredito">
+            <h2>Datos del Crédito</h2>
+
+            <label for="tipoCredito">Tipo de crédito</label>
+            <select name="tipoCredito" id="tipoCredito">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="creditoLibreInversion">Crédito Libre Inversión</option>
+                <option value="creditoVehiculo">Crédito Vehículo</option>
+                <option value="creditoVivienda">Crédito Vivienda</option>
+                <option value="creditoEducativo">Crédito Educativo</option>
+                <option value="creditoEmpresarial">Crédito Empresarial</option>
+            </select>
+
+            <label for="montoSolicitado">Monto solicitado</label>
+            <input type="number" id="montoSolicitado" name="montoSolicitado">
+
+            <label for="plazo">Plazo en meses</label>
+            <select name="plazo" id="plazo">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="60">60</option>
+            </select>
+
+            <label for="destinoCredito">Destino del crédito</label>
+            <textarea name="destinoCredito" id="destinoCredito" placeholder="Para que necesitas el Crédito?"></textarea>
+          </div>
+
+          <div class="datosCliente" id="datosLaborales">
+            <h2>Datos Laborales</h2>
+
+            <label for="empresa">Empresa donde trabaja</label><br>
+            <input type="text" name="empresa" id="empresa">
+
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo">
+
+            <label for="ingresos">Ingresos mensuales</label>
+            <input type="number" name="ingresos" id="ingresos">
+          </div>
+        </div>
+        
+        <br>
+       <div class="botones">
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Limpiar Formulario</button>
+       </div>
+
+    </form>
+
+    <footer class="footer">
+        <p>&copy 2025 CreditSmart</p>
+        <p>Toda la información presentada es de carácter informativo y puede variar según la entidad financiera.</p>
+        <p>Proyecto académico — No representa a ninguna institución bancaria real.</p>
+    </footer>
+</body>
+</html>
